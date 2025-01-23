@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Survey Form</title>
+</head>
+<body>
+  <div class="container">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">Your opinion matters to us! Please take a moment to complete this survey.</p>
+    <form id="survey-form">
+      
+      <!-- Name Field -->
+      <div class="input-group">
+        <label id="name-label" for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name..." required>
+      </div>
+      
+      <!-- Email Field -->
+      <div class="input-group">
+        <label id="email-label" for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email..." required>
+      </div>
+      
+      <!-- Gender Dropdown -->
+      <div class="input-group">
+        <label for="genderdropdown">Gender:</label>
+        <select id="genderdropdown" name="gender">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="prefernotsay">Prefer not say</option>
+        </select>
+      </div>
+      
+      <!-- Age Field -->
+      <div class="input-group">
+        <label id="number-label" for="number">Age :</label>
+        <input type="number" id="number" name="age" placeholder="Enter your age" min="10" max="50">
+      </div>
+
+      <!-- Programming Language Dropdown -->
+      <div class="input-group">
+        <label for="dropdown">What programming language do you use most often?</label>
+        <select id="dropdown" name="language">
+          <option value="javascript">JavaScript</option>
+          <option value="python">Python</option>
+          <option value="java">Java</option>
+          <option value="laravel">Laravel</option>
+          <option value="php">PHP</option>
+          <option value="csharp">C#</option>
+          <option value="ruby">Ruby</option>
+          <option value="go">Go</option>
+          <option value="swift">Swift</option>
+        </select>
+      </div>
+
+      <!-- Radio Buttons -->
+      <fieldset class="input-group">
+        <legend>How often do you code?</legend>
+        <label><input type="radio" name="frequency" value="daily" required> Daily</label>
+        <label><input type="radio" name="frequency" value="weekly"> Weekly</label>
+        <label><input type="radio" name="frequency" value="monthly"> Monthly</label>
+      </fieldset>
+
+      <!-- Tools Checkboxes -->
+      <fieldset class="input-group">
+        <legend>Which of these tools do you use? (Select all that apply)</legend>
+        <label><input type="checkbox" name="tools" value="vscode"> VSCode</label>
+        <label><input type="checkbox" name="tools" value="git"> Git</label>
+        <label><input type="checkbox" name="tools" value="github"> GitHub</label>
+        <label><input type="checkbox" name="tools" value="docker"> Docker</label>
+        <label><input type="checkbox" name="tools" value="jenkins"> Jenkins</label>
+        <label><input type="checkbox" name="tools" value="aws"> AWS</label>
+        <label><input type="checkbox" name="tools" value="azure"> Azure</label>
+        <label><input type="checkbox" name="tools" value="other"> Other: <input type="text" name="other-tools" placeholder="Specify other tools..."></label>
+      </fieldset>
+
+      <!-- Textarea -->
+      <div class="input-group">
+        <label for="comments">Any additional comments?</label>
+        <textarea id="comments" name="comments" rows="4" placeholder="Enter your comments here..."></textarea>
+      </div>
+
+      <!-- Submit Button -->
+      <div class="input-group">
+        <button id="submit" type="submit">Submit</button>
+      </div>
+    </form>
+    <section id="author-section">
+            <h2>Author</h2>
+            <div class="author-links">
+                <a href="https://www.linkedin.com/in/salviamayliebudiawati/" target="_blank" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/salviaaaa" target="_blank" title="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.instagram.com/slvia005/" target="_blank" title="Instagram"><i class="fab fa-instagram"></i></a>
+            </div>
+        </section>
+  </div>
+</body>
+</html>
