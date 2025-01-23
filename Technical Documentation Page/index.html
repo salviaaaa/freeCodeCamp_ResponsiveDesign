@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>How to Build a Website</title>
+</head>
+<body>
+  <!-- Navbar Section -->
+  <nav id="navbar">
+    <header>How to Build a Website</header>
+    <a class="nav-link" href="#HTML_and_Basic_Structure">HTML and Basic Structure</a>
+    <a class="nav-link" href="#Styling_with_CSS">Styling with CSS</a>
+    <a class="nav-link" href="#Responsive_Design">Responsive Design</a>
+    <a class="nav-link" href="#Adding_Interactivity_with_JavaScript">Adding Interactivity with JavaScript</a>
+    <a class="nav-link" href="#Publishing_Your_Website">Publishing Your Website</a>
+   <section class="author">
+        <header>Author</header>
+        <a class="icon-link" href="https://www.linkedin.com/in/salviamayliebudiawati/" target="_blank"><i class="bi bi-linkedin"></i></a>
+        <a class="icon-link" href="https://github.com/salviaaaa" target="_blank"><i class="bi bi-github"></i></a>
+        <a class="icon-link" href="https://www.instagram.com/slvia005/" target="_blank"><i class="bi bi-instagram"></i></a>
+    </section>
+  </nav>
+
+  <!-- Main Content Section -->
+  <main id="main-doc">
+    <!-- Section 1: HTML and Basic Structure -->
+    <section class="main-section" id="HTML_and_Basic_Structure">
+      <header>HTML and Basic Structure</header>
+      <p>HTML (HyperText Markup Language) is the standard markup language used to create web pages.</p>
+      <p>It is the building block of web development and provides the basic structure of a webpage.</p>
+      <code>&lt;html&gt;&lt;/html&gt;</code>
+      <p>The opening and closing HTML tags are essential for the document's structure.</p>
+      <p>Within the &lt;html&gt; tag, you will find other important tags such as &lt;head&gt; and &lt;body&gt;.</p>
+      <code>&lt;head&gt;&lt;/head&gt;</code>
+      <p>The &lt;head&gt; tag contains meta information like the title of the page, links to stylesheets, etc.</p>
+      <p>Below is a basic HTML structure:</p>
+      <code>&lt;html&gt;&lt;head&gt;&lt;title&gt;Website&lt;/title&gt;&lt;/head&gt;&lt;body&gt;&lt;/body&gt;&lt;/html&gt;</code>
+      <ul>
+        <li>&lt;html&gt;: Defines the document type</li>
+        <li>&lt;head&gt;: Contains metadata</li>
+        <li>&lt;title&gt;: Specifies the title of the page</li>
+        <li>&lt;body&gt;: Contains the content of the page</li>
+        <li>&lt;h1&gt;: Defines the main header</li>
+      </ul>
+    </section>
+
+    <!-- Section 2: Styling with CSS -->
+    <section class="main-section" id="Styling_with_CSS">
+      <header>Styling with CSS</header>
+      <p>CSS (Cascading Style Sheets) is used to style the appearance of HTML elements.</p>
+      <p>CSS allows you to change the color, layout, and positioning of elements.</p>
+      <code>body { background-color: #f4f4f4; }</code>
+      <p>This example changes the background color of the page.</p>
+      <p>You can also use CSS to style fonts, add margins and padding, and much more.</p>
+      <code>h1 { font-family: 'Poppins', sans-serif; font-size: 36px; }</code>
+      <p>Here, we're changing the font of the h1 header to 'Poppins'.</p>
+      <ul>
+        <li>Font-family: Specifies the font of an element</li>
+        <li>Background-color: Sets the background color</li>
+        <li>Padding: Adds space inside an element</li>
+        <li>Margin: Adds space outside an element</li>
+        <li>Color: Sets the color of text</li>
+      </ul>
+    </section>
+
+    <!-- Section 3: Responsive Design -->
+    <section class="main-section" id="Responsive_Design">
+      <header>Responsive Design</header>
+      <p>Responsive web design ensures that your website looks good on all devices, such as smartphones, tablets, and desktops.</p>
+      <code>@media screen and (max-width: 600px) { body { font-size: 14px; } }</code>
+      <p>The above CSS rule adjusts the font size on small screens.</p>
+      <p>Responsive design uses media queries to adapt the layout to different screen sizes.</p>
+      <p>By using flexible grid layouts, you can ensure that your website is mobile-friendly.</p>
+      <ul>
+        <li>Media queries: Apply styles based on device characteristics</li>
+        <li>Viewport: Defines the area of the screen used by the webpage</li>
+        <li>Flexible grid layouts: Makes the design more adaptive</li>
+        <li>Relative units: Allows better scaling of elements</li>
+        <li>Breakpoints: Defines screen sizes at which design changes occur</li>
+      </ul>
+    </section>
+
+    <!-- Section 4: Adding Interactivity with JavaScript -->
+    <section class="main-section" id="Adding_Interactivity_with_JavaScript">
+      <header>Adding Interactivity with JavaScript</header>
+      <p>JavaScript is a programming language that allows you to add interactivity to your website.</p>
+      <p>You can use JavaScript to handle events such as button clicks, form submissions, and more.</p>
+      <code>document.getElementById("myButton").onclick = function() { alert('Button clicked!'); }</code>
+      <p>The above code shows how you can attach an event listener to a button.</p>
+      <ul>
+        <li>Event listeners: Trigger functions based on user interactions</li>
+        <li>DOM manipulation: Allows you to interact with the HTML elements dynamically</li>
+        <li>Functions: Encapsulate code for reusability</li>
+        <li>Variables: Store data and values for use in your scripts</li>
+        <li>Loops: Iterate over collections of items</li>
+      </ul>
+    </section>
+
+    <!-- Section 5: Publishing Your Website -->
+    <section class="main-section" id="Publishing_Your_Website">
+      <header>Publishing Your Website</header>
+      <p>Once you've developed your website, the next step is to publish it so others can see it.</p>
+      <p>There are many hosting services available where you can upload your files.</p>
+      <code>ftp://yourwebsite.com</code>
+      <p>FTP (File Transfer Protocol) allows you to transfer files from your local computer to the server.</p>
+      <p>You can also use cloud hosting services like GitHub Pages or Netlify for free hosting.</p>
+      <ul>
+        <li>FTP: File transfer between local and remote servers</li>
+        <li>Web hosting: Services to store your website files</li>
+        <li>Cloud hosting: Host websites without physical servers</li>
+        <li>GitHub Pages: A free hosting service for static websites</li>
+        <li>Domain name: The address of your website on the internet</li>
+      </ul>
+    </section>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,143 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-start;
+    background-color: #f7f7f7;
+  }
+  
+  /* Navbar Styles */
+  #navbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 20%;
+    height: 100vh; /* Ensure the navbar takes up the full height of the screen */
+    background-color: #2f2f2f;
+    padding: 20px;
+    color: #fff;
+    overflow-y: auto;
+    box-sizing: border-box;
+  }
+  
+  #navbar header {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: bold; /* Make header bold */
+  }
+  
+  .nav-link {
+    display: block;
+    padding: 10px;
+    margin-bottom: 15px;
+    color: #fff;
+    background-color: #333;
+    border-radius: 5px;
+    font-size: 18px;
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .nav-link:hover {
+    background-color: #575757;
+  }
+  
+  /* Author Section */
+  .author {
+    margin-top: auto; /* Push to the bottom */
+    padding-top: 20px;
+    border-top: 1px solid #575757;
+    text-align: center; /* Center the icons */
+  }
+  .author header {
+      font-size: 20px;
+      margin-bottom: 10px;
+      font-weight: bold;
+  }
+  
+  
+  .icon-link {
+    margin: 0 10px;
+    font-size: 24px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .icon-link:hover {
+    color: #ddd;
+  }
+  /* Main Content Section */
+  #main-doc {
+    margin-left: 20%; /* Create space for navbar */
+    padding: 20px;
+    width: 80%; /* Make main content take up the remaining width */
+    height: 100vh;
+    overflow-y: auto; /* Make only the content scrollable */
+    box-sizing: border-box;
+  }
+  
+  .main-section {
+    margin-bottom: 40px;
+  }
+  
+  .main-section header {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 15px;
+    font-weight: bold; /* Make header bold */
+  }
+  
+  ul {
+    list-style-type: disc;
+    margin-left: 20px;
+  }
+  
+  code {
+    display: block;
+    background-color: #f1f1f1;
+    padding: 10px;
+    margin: 10px 0;
+    font-family: monospace;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 1200px) {
+    #navbar {
+      width: 25%; /* Make navbar a bit wider on larger tablets/desktops */
+    }
+  
+    #main-doc {
+      margin-left: 25%;
+      width: 75%;
+    }
+  }
+  
+  @media (max-width: 800px) {
+    #navbar {
+      width: 100%;
+      position: relative; /* Make navbar relative to the body */
+      height: auto; /* Navbar will no longer take full height */
+    }
+  
+    #main-doc {
+      margin-left: 0;
+      width: 100%;
+    }
+  
+    .nav-link {
+      margin-bottom: 10px;
+    }
+  }
+  
+  @media (max-width: 500px) {
+    #navbar {
+      width: 100%; /* Full width navbar on very small screens */
+    }
+  
+    #main-doc {
+      margin-left: 0;
+      width: 100%;
+    }
+  }
+  
