@@ -1,0 +1,518 @@
+/* Body */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #fff;
+    padding: 1em 2em;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+#logo {
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #fff;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 100%;
+    padding-right: 50px;
+   
+}
+
+#nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.topnav a {
+  float: left;
+  display: block;
+  color: #333;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  font-weight: bold;
+}
+
+.topnav a:hover {
+  background-color: #ff0081;
+  color: white;
+}
+
+.topnav a.active {
+    background-color: #ff0081;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+    font-size: 24px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+/* Hero Section */
+#hero {
+    text-align: center;
+    padding: 100px 20px;
+    background-image: linear-gradient(to bottom, #f4f4f4, #fff);
+}
+
+#hero h1 {
+    font-family: 'Playwrite VN', sans-serif;
+    font-size: 3em;
+    margin-bottom: 10px;
+    color: #333;
+    line-height: 1.2;
+}
+
+#hero .yedam {
+    color: #ff0081;
+   
+}
+
+
+#hero p {
+    font-size: 1.2em;
+    color: #666;
+    margin-bottom: 20px;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+/* About Section */
+#about {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #f9f9f9;
+}
+
+#about h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.about-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    gap: 30px;
+    justify-content: center;
+    display: flex;
+}
+
+#about-content {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    width: 100%;
+}
+
+#imgyedam {
+    max-width: 400px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+#descriptionyedam {
+    max-width: 600px;
+    text-align: left;
+}
+
+/* Music Section */
+#music-section {
+    padding: 50px 20px;
+    text-align: center;
+    background-color: #fff;
+}
+
+#music-section h2 {
+    font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.music-title{
+    text-align: left;
+  
+}
+.music-title h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 2.4rem;
+    margin-bottom: 15px;
+    display: inline-block;
+    vertical-align: top; 
+    margin-right: 15px; 
+    padding-left: 40px;
+    justify-content: center;
+}
+.music-info {
+    font-size: 1em;
+    margin-bottom: 30px;
+    display: flex;
+    align-items: center;
+    color: #666;
+    line-height: 1.5;
+    padding-left: 40px;
+    
+}
+.music-info a:hover{
+    color: #ff0081;
+}
+.music-info a {
+    color: #666;;
+    transition: color 0.3s ease-in-out; 
+}
+
+.music-info span {
+    font-family: 'Poppins', sans-serif;
+    margin-right: 5px; 
+}
+.music-info i {
+    margin: 0 5px;
+}
+
+.music-info span:last-child { 
+    margin-right: 15px;
+}
+
+
+.music-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.music-container p {
+    margin-bottom: 15px;
+}
+
+/* Video Section */
+
+.iframe-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 20px;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.iframe-container iframe{
+    max-width: 100%; /* Make sure the iframe doesn't overflow the container */
+}
+
+/* Lyrics Section */
+.lyrics-section {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.lyrics-section h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+ 
+}
+
+.lyrics-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.lyrics-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    justify-content: space-between;
+
+}
+
+.lyrics-column {
+    flex: 1;
+    padding: 10px;
+    box-sizing: border-box;
+    margin-bottom: 20px;
+}
+
+.lyrics-column h4 {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    color: #ff0081;
+}
+
+.lyrics-column p {
+    white-space: pre-line;
+    line-height: 1.5;
+    font-size: 0.9rem;
+    color: #666;
+}
+
+/* Album Section */
+#album-section {
+     background-color: #f9f9f9;
+    padding: 50px 20px;
+    text-align: center;
+
+}
+
+.album-container {
+    max-width: 1000px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.album-title {
+    font-family: 'Playfair Display', serif;
+     font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    text-align: left;
+}
+
+.album-image {
+    max-width: 200px;
+    border-radius: 10px;
+}
+
+.list-section {
+      text-align: left;
+        font-size: 1rem;
+}
+
+.album-list {
+     font-size: 1rem;
+     text-align: left;
+}
+.album-list ul{
+        list-style: none;
+        padding: 0;
+}
+
+.album-list li {
+    margin-bottom: 8px;
+}
+
+.album-list li a{
+        text-decoration: none;
+       color: #000; /* Customize link color */
+        transition: color 0.3s ease-in-out; /* Customize transition effect */
+    
+}
+
+.album-list li a:hover{
+    color: #ff0081;
+}
+
+/* Email Section */
+#email-section {
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #fff;
+}
+
+#email-section h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+#form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+#email {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 250px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#submit {
+    padding: 10px 20px;
+    background-color: #ff0081;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#submit:hover {
+    background-color: #e60072;
+}
+
+
+/* Author Section */
+#author-section {
+    text-align: center;
+    padding: 30px 20px;
+    background-color: #f9f9f9;
+}
+
+#author-section h2 {
+  font-size: 2em;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.author-links {
+    margin-top: 10px;
+}
+
+.author-links a {
+    display: inline-block;
+    margin: 0 10px;
+    font-size: 24px;
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.author-links a:hover {
+    color: #ff0081;
+}
+
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1em;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    #header {
+        flex-direction: row;
+        justify-content: space-between;
+        text-align: left;
+        padding: 10px;
+    }
+
+    #nav-bar {
+        flex-direction: column;
+        align-items: flex-start;
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: #fff;
+        padding: 20px;
+        display: none;
+    }
+
+    #nav-bar.active {
+        display: flex;
+    }
+
+    .nav-link {
+        margin: 10px 0;
+        margin-left: 0;
+    }
+
+    .hamburger-menu {
+        display: block;
+        position: absolute;
+        right: 20px;
+        top: 20px;
+    }
+
+    .about-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #about-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #imgyedam {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .about-image {
+        max-width: 80%;
+        margin-bottom: 20px;
+    }
+
+   .album-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+
+    .music-image {
+        max-width: 80%;
+    }
+
+    #email {
+        width: 80%;
+    }
+    #nav-list {
+        display: none; /* Hide nav list by default on smaller screens */
+    }
+
+    .topnav .icon {
+        display: block; /* Show the hamburger icon */
+    }
+
+    .topnav.responsive #nav-list {
+        display: block;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: #fff;
+        width: 100%;
+        z-index: 100;
+        text-align: left; /* Align text to the left */
+    }
+
+    .topnav.responsive #nav-list li {
+        display: block;
+        margin: 0;
+    }
+
+    .topnav.responsive #nav-list li a {
+        padding: 15px 20px;
+        text-align: left;
+        display: block;
+    }
+    .lyrics-wrapper {
+        flex-direction: column;
+    }
+}
