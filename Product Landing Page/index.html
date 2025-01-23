@@ -10,15 +10,19 @@
     <link href="https://fonts.googleapis.com/css2?family=Playwrite+VN:wght@100..400&family=Poppins:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha512-9usAa10IRO0HhonpyAIVpjrylPvoDwiPUiKdWk5t3PyolY1cOd4DSE0Ga+ri4AuTroPR5aQvXU9xC6qOPnzFeg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+        
+    <!-- Favicon -->
+    <link rel="icon" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuKSv3i6FOmLD0lxzDfjY5-oMfy7KeBvBX2g&s" type="image/png">
+    
 </head>
 <body>
     <header id="header">
-        <img id="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqCXDJ_Yp-cQj4Ws4w6vpcIMJFmvEISEk2xw&s" alt="Yedam Logo">
-        <nav class="topnav" id="myTopnav">
+        <img id="header-img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqCXDJ_Yp-cQj4Ws4w6vpcIMJFmvEISEk2xw&s" alt="Yedam Logo">
+        <nav class="topnav" id="nav-bar">
             <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
                 <i class="fa fa-bars"></i>
             </a>
-            <ul id="nav-list">
+             <ul id="nav-list" >
                 <li><a href="#hero" class="nav-link" id="nav-home" onclick="closeMenu()">Home</a></li>
                 <li><a href="#about" class="nav-link" id="nav-about" onclick="closeMenu()">About</a></li>
                 <li><a href="#music-section" class="nav-link" id="nav-music" onclick="closeMenu()">Music</a></li>
@@ -67,7 +71,7 @@
 )
                 </p>
                  <div class="iframe-container" id="iframe-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/Hyozp53YpIQ?si=6OYaNPRh6LMjUsIe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    <iframe id="video" width="560" height="315" src="https://www.youtube.com/embed/Hyozp53YpIQ?si=6OYaNPRh6LMjUsIe" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                  </div>
                  <div class="lyrics-section">
                     <h3>Lyrics</h3>
@@ -280,7 +284,7 @@
     <script>
     // Toggle menu visibility for smaller screens
         function toggleMenu() {
-            var x = document.getElementById("myTopnav");
+            var x = document.getElementById("nav-bar");
             if (x.className === "topnav") {
                 x.className += " responsive";
             } else {
@@ -290,12 +294,12 @@
     
         // Close the menu when a link is clicked
         function closeMenu() {
-            var x = document.getElementById("myTopnav");
+            var x = document.getElementById("nav-bar");
             x.className = "topnav";  // Close the menu after clicking a link
         }
 
-         document.getElementById('fallin-link').addEventListener('click', function(e) {
-            e.preventDefault(); // Prevent the default action of jumping
+        document.getElementById('fallin-link').addEventListener('click', function(e) {
+             e.preventDefault(); // Prevent the default action of jumping
              const iframeContainer = document.getElementById('iframe-container');
              const iframe = document.querySelector('.iframe-container iframe');
              iframe.src = this.getAttribute('data-link');
