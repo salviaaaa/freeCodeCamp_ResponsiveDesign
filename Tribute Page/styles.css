@@ -1,0 +1,132 @@
+/* General Body and Page Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f7f7;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+  }
+  
+  /* Main Content Container */
+  main {
+    background-color: white;
+    padding: 40px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 800px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    box-sizing: border-box;
+    overflow: hidden;
+    margin: 20px;
+  }
+  
+  /* Title Styles */
+  #title {
+    text-align: center;
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+  
+  /* Image Section */
+  #img-div {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Image Styles */
+  #image {
+    width: 100%;
+    max-width: 100%; /* Perubahan di sini */
+    height: auto;
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+  }
+  
+  /* Caption for Image */
+  #img-caption {
+    font-size: 14px;
+    color: #777;
+    margin-top: 10px;
+  }
+  
+  /* Tribute Info Section */
+  #tribute-info {
+    font-size: 16px;
+    color: #333;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    text-align: justify;
+  }
+  
+  /* Link Styles */
+  #tribute-link {
+    text-align: center;
+    display: block;
+    font-size: 16px;
+    color: #1a73e8;
+    text-decoration: none;
+    padding: 12px 2px 12px 2px;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    width: 100%;
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  #tribute-link:hover {
+    background-color: #e1e1e1;
+  }
+  
+  /* Author Section */
+  #author-section {
+      text-align: center;
+      padding: 20px 0;
+  }
+  
+  #author-section h2 {
+      font-size: 20px;
+      color: #333;
+      margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .author-links {
+      margin-top: 10px;
+  }
+  
+  .author-links a {
+      display: inline-block;
+      margin: 0 10px;
+      font-size: 24px;
+      color: #333;
+      transition: color 0.3s ease;
+  }
+  
+  .author-links a:hover {
+      color: #1a73e8;
+  }
+  
+  
+  /* Media Queries for Responsiveness */
+  @media (max-width: 600px) {
+    #title {
+      font-size: 28px;
+    }
+  
+    #tribute-info {
+      font-size: 14px;
+    }
+  
+    #tribute-link {
+      font-size: 14px;
+    }
+      main {
+      padding: 20px;
+      margin: 10px;
+    }
+  }
